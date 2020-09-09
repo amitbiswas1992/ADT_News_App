@@ -1,6 +1,6 @@
 
 <p align = "center"> 
-<img src="githubexplorer/Assets.xcassets/gh-logo.imageset/gh-logo@3x.png"  width ="100" height="100" >
+<img src="ADT_NewsApp/Assets.xcassets/appstore.imageset/appstore.png"  width ="100" height="100" >
 </p>
 <div align="center">
  <h2> ADT NEWS </h2>
@@ -18,7 +18,7 @@ This is a small news application where all the news feeds are coming from an ope
 
 
 <p align = "center"> 
-<img src="ADT_TEST/Assets.xcassets/adt_news.imageset/adt_news.png"  width ="280" height="575" >
+<img src="ADT_NewsApp/Assets.xcassets/adt_news.imageset/adt_news.png"  width ="280" height="575" >
 </p>
 
 ## Used technology 
