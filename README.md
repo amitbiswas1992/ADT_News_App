@@ -6,7 +6,7 @@
  <h2> ADT NEWS </h2>
 </div>
 <p align = "center"> 
-<a href="https://github.com/amitbiswas1992/githubexplorer"><img src="https://travis-ci.com/slatedocs/slate.svg?branch=master" alt="Build Status"></a>
+<a href="https://github.com/amitbiswas1992/ADT_News_App"><img src="https://travis-ci.com/slatedocs/slate.svg?branch=master" alt="Build Status"></a>
 </p>
 
 
@@ -32,16 +32,16 @@ This is a small news application where all the news feeds are coming from an ope
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/fvcproductions/SOMEREPO`
+- Clone this repo to your local machine using `https://github.com/amitbiswas1992/ADT_News_App.git`
 
 ### Note 
 
-- For the security reason , it's recommneded to use your own  API key 
+-  It's recommneded to use your own  API key 
 
 ```swift
 // code away!
 
-let apiKey = "INSERT YOUR API KEY HERE"
+ apiKey = "INSERT YOUR API KEY HERE"
 ```
 
 ###  Thank You !  Happy Coding :)
