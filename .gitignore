@@ -35,7 +35,7 @@ Temporary Items
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
-Utilities/AppConstants.swift
+ADT_NewsApp/Utilities/AppConstants.swift
 
 
 ## User settings
