@@ -72,30 +72,39 @@ extension NewsListingViewController {
             self.indicator.startAnimating()
         }
         
-        NetworkManager.shared.getNewsList(
-            
-            apiKey: AppConstant.apiKey.rawValue,
-            completed: { (result: NewsListResult) in
-                switch result {
-                    case .success(let list):
-                        
-                        DispatchQueue.main.async {
-                            self.newsArticlesList.append(contentsOf: list)
-                            if self.isRefresh {
-                                self.isRefresh = false
-                                self.refreshControl.endRefreshing()
-                            }
+        var keys: NSDictionary?
+        
+        if let path = Bundle.main.path(forResource: "Info", ofType: "plist") {
+            keys = NSDictionary(contentsOfFile: path)
+        }
+        if let dict = keys, let apiKey = dict["apiKey"] as? String {
+            NetworkManager.shared.getNewsList(
+                
+                apiKey: apiKey,
+                completed: { (result: NewsListResult) in
+                    switch result {
+                        case .success(let list):
                             
+                            DispatchQueue.main.async {
+                                self.newsArticlesList.append(contentsOf: list)
+                                if self.isRefresh {
+                                    self.isRefresh = false
+                                    self.refreshControl.endRefreshing()
+                                }
+                                
+                                self.tableView.reloadData()
+                                self.indicator.stopAnimating()
+                        }
+                        
+                        
+                        case .failure( _):
                             self.tableView.reloadData()
                             self.indicator.stopAnimating()
                     }
-                    
-                    
-                    case .failure( _):
-                        self.tableView.reloadData()
-                        self.indicator.stopAnimating()
-                }
-        })
+            })
+        }
+        
+        
         
     }
 }

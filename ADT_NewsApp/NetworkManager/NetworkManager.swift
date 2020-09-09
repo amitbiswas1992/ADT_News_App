@@ -18,7 +18,7 @@ class NetworkManager {
     
     func getNewsList( apiKey: String, completed: @escaping (_ newsList: Result< [News], ADTError> ) -> Void) {
         
-        let urlString = String.init(format: "https://newsapi.org/v2/top-headlines?country=us&apiKey=%@", apiKey)
+       let urlString = String.init(format: "https://newsapi.org/v2/top-headlines?country=us&apiKey=%@", apiKey)
         
         let endpoint = urlString
         
