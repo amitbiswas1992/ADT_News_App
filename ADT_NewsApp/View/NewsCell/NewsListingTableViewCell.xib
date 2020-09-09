@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="129" id="KGk-i7-Jjw" customClass="NewsListingTableViewCell" customModule="ADT_NewsApp">
+            <rect key="frame" x="0.0" y="0.0" width="558" height="129"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="558" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sov-Wo-dcx">
+                        <rect key="frame" x="16" y="16" width="39.5" height="59.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uh-ub-ElX">
+                        <rect key="frame" x="16" y="91.5" width="366" height="17.5"/>
+                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8P-sl-ALK">
+                        <rect key="frame" x="422" y="14.5" width="120" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q7J-Ki-byA" customClass="NewsListingTableViewCell">
+                                <rect key="frame" x="0.5" y="0.5" width="119" height="100"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="28D-ho-zmC"/>
+                            <constraint firstAttribute="trailing" secondItem="Q7J-Ki-byA" secondAttribute="trailing" constant="0.5" id="5mY-Xh-rcC"/>
+                            <constraint firstAttribute="width" constant="120" id="XCf-NM-kBj"/>
+                            <constraint firstAttribute="bottom" secondItem="Q7J-Ki-byA" secondAttribute="bottom" constant="-0.5" id="dF2-lc-H1u"/>
+                            <constraint firstItem="Q7J-Ki-byA" firstAttribute="top" secondItem="H8P-sl-ALK" secondAttribute="top" constant="0.5" id="nPP-Ok-MUC"/>
+                            <constraint firstItem="Q7J-Ki-byA" firstAttribute="leading" secondItem="H8P-sl-ALK" secondAttribute="leading" constant="0.5" id="rem-vu-Xy7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4Uh-ub-ElX" firstAttribute="leading" secondItem="sov-Wo-dcx" secondAttribute="leading" id="1Et-uF-iQJ"/>
+                    <constraint firstItem="sov-Wo-dcx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="4tU-U4-RAu"/>
+                    <constraint firstItem="sov-Wo-dcx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="SH1-RO-58d"/>
+                    <constraint firstAttribute="trailing" secondItem="H8P-sl-ALK" secondAttribute="trailing" constant="16" id="d84-GV-TQf"/>
+                    <constraint firstItem="H8P-sl-ALK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fIU-Ol-YhZ"/>
+                    <constraint firstItem="4Uh-ub-ElX" firstAttribute="top" secondItem="sov-Wo-dcx" secondAttribute="bottom" constant="16" id="hYM-Rv-8NR"/>
+                    <constraint firstAttribute="bottom" secondItem="4Uh-ub-ElX" secondAttribute="bottom" constant="20" id="mWb-KR-lEI"/>
+                    <constraint firstItem="H8P-sl-ALK" firstAttribute="leading" secondItem="4Uh-ub-ElX" secondAttribute="trailing" constant="40" id="o9s-Yo-WLe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="newsImage" destination="Q7J-Ki-byA" id="FfA-br-QmK"/>
+                <outlet property="newsImageOuterView" destination="H8P-sl-ALK" id="VLx-ac-Dz6"/>
+                <outlet property="newsSourceLabel" destination="sov-Wo-dcx" id="ed7-i0-WGI"/>
+                <outlet property="newsTitleLabel" destination="4Uh-ub-ElX" id="ft7-hL-7GW"/>
+            </connections>
+            <point key="canvasLocation" x="-110" y="86"/>
+        </tableViewCell>
+    </objects>
+</document>
